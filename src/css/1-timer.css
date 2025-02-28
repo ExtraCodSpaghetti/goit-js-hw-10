@@ -1,0 +1,92 @@
+@import 'flatpickr/dist/flatpickr.min.css';
+@import 'izitoast/dist/css/iziToast.min.css';
+
+.timer-wrapper {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 40px;
+  padding: 32px 24px;
+  border: 2px solid #d1d7e3; /* Легкий серый бордер */
+  border-radius: 8px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#datetime-picker {
+  display: inline-block;
+  border: 1px solid #b0b9c2; /* Легкий серый бордер */
+  transition: border-color 250ms ease-in-out;
+  outline: none;
+  padding-left: 8px;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #4a4a4a; /* Темно-серый текст */
+  margin-right: 8px;
+}
+
+#datetime-picker:hover {
+  border-color: #707070; /* Более темный бордер при наведении */
+}
+
+#datetime-picker:focus {
+  border-color: #3478f7; /* Синий бордер при фокусе */
+  color: #000000;
+}
+
+#datetime-picker:disabled {
+  background-color: #fafafa;
+  color: #c51b1b;
+}
+
+.timer-wrapper > button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  width: 100%;
+  background-color: #4e75ff; /* Нейтрально-синий фон */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: white;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.timer-wrapper > button:hover,
+.timer-wrapper > button:focus {
+  background-color: #3560d3; /* Более темный синий фон при наведении */
+}
+
+.timer-wrapper > button:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+  text-align: center;
+  justify-content: center;
+}
+
+.value {
+  display: block;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #4a4a4a; /* Темно-серый цвет текста */
+}
+
+.label {
+  line-height: 1.5;
+  color: #4a4a4a; /* Темно-серый цвет текста */
+}
